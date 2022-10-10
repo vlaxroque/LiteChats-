@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="3dp">
+
+
+    <!--minimize network size, min redundancy-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatarIvv"
+            android:src="@drawable/ic_baseline_person_pin_24"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:c_border="true"
+            app:c_border_color="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/emailTvv"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Email"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/phoneTvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Phone"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/universityTvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person University"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/courseTvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Specialty"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <!--block/unblock iv-->
+        <ImageView
+            android:id="@+id/blckIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_unblock_green"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

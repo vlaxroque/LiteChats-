@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/onlineStatusTv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIV1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_person_pin_24"
+            app:c_border="true"
+            app:c_border_color="@color/black"
+            />
+        <TextView
+            android:id="@+id/nameTv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="His Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/profileIV1"
+            android:layout_toRightOf="@id/profileIV1"
+            android:layout_marginLeft="4dp" />
+        <TextView
+            android:id="@+id/lastMessagePatientTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Message"
+            android:maxLines="2"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/profileIV1"
+            android:layout_toRightOf="@id/profileIV1"
+            android:layout_below="@+id/nameTv1"
+            android:layout_marginLeft="4dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
