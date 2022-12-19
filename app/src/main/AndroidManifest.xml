@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.litechats">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiteChats">
+        <activity android:name=".VideoPlayActivity"></activity>
+        <activity android:name=".Adapters.FollowingListActivity" />
+        <activity android:name=".ThereSpecificPostActivity" />
+        <activity android:name=".AddNewsActivity" />
+        <activity android:name=".DashboardUniversityActivity" />
+        <activity android:name=".LoginAsActivity" />
+        <activity android:name=".LoginUniversityActivity" />
+        <activity android:name=".RegisterUniversityActivity" />
+        <activity android:name=".RegisterAsActivity" />
+        <activity android:name=".NewsDetailActivity" />
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoCallActivity" />
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".ThereProfileActivity" />
+        <activity android:name=".AddPostActivity2" />
+        <activity android:name=".AddPostActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

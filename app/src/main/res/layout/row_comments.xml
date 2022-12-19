@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/avatarIvC"
+            android:src="@drawable/ic_baseline_person_pin_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:c_border="true"
+            app:c_border_color="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTvC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+
+
+            <TextView
+                android:id="@+id/commentTvC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="This is comment"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/timeTvC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="12/2/2021 9:30 Pm"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
